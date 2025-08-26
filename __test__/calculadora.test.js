@@ -27,6 +27,38 @@ describe("Calculadora", () => {
         //Assert
         expect(result).toBe(100);
     });
+
+    test("Deve multiplicar dois números", () => {
+        //AAA
+        //Arrange 
+        const a = 10;
+        const b = 4;
+
+        //Act
+        const result = multiplicar(a, b);
+
+        //Assert
+        expect(result).toBe(100);
+    });
    
 
+    test("Deve dividir dois números", () => {
+        //AAA
+        //Arrange 
+        const a = 10;
+        const b = 4;
+
+        //Act
+        const result = dividir(a, b);
+
+        //Assert
+        expect(result).toBe(100);
+    });
+
+
+    test("Deve lançar erro quando dividir por zero", () => {
+       expect(() => {
+           dividir(10, 0);
+       }).toThrowError("Não é possível dividir por zero");
+    });
  });
