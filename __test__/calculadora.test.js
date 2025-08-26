@@ -1,4 +1,4 @@
-import { somar } from '../src/calculadora.js';
+import { somar, subtrair } from '../src/calculadora.js';
 
 describe("Calculadora", () => {
     test("Deve somar dois números", () => {
@@ -13,4 +13,20 @@ describe("Calculadora", () => {
         //Assert
         expect(result).toBe(5);
     });
+   
+
+    test("Deve subtrair dois números", () => {
+        //AAA
+        //Arrange 
+        const a = 13;
+        const b = 3;
+
+        //Act
+        const result = subtrair(a, b);
+
+        //Assert
+        expect(result).toBe(100);
     });
+   
+
+ });
