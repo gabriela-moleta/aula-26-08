@@ -4,7 +4,7 @@
   "description": "aula 01 Tsof",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": " set NODE_OPTIONS=--experimental-vm-modules && jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/gabriela-moleta/aula-26-08/issues"
   },
-  "homepage": "https://github.com/gabriela-moleta/aula-26-08#readme"
+  "homepage": "https://github.com/gabriela-moleta/aula-26-08#readme",
+  "devDependencies": {
+    "jest": "^30.0.5"
+  }
 }
